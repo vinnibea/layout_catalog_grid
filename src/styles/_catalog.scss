@@ -1,7 +1,7 @@
 
 .catalog {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   margin: 0 auto;
   max-width: $card-width;
   gap: $gap;
@@ -10,7 +10,6 @@
     @media (min-width: nth($breakpoints, $index)) {
       & {
         grid-template-columns: repeat(1 + $index, 1fr);
-        gap: 48px;
         max-width: $card-width + ($index * $card-width) + $gap * $index;
       }
     }
